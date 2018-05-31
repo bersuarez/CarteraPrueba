@@ -20,6 +20,7 @@ import QRCodeScanner from 'react-native-qrcode-scanner';
 import * as Keychain from 'react-native-keychain';
 var activo = false;
 
+//Pene
 
 var publicKeyDestination = "GB6PACXR564X4PHW6B36SNW7OYXHPJJGPNPVBI5FJUOS227YOXB3NION";
 var privateKeyDestination = "SALWDYX53AQ7GEBLVY5554XOBR4DHABCJXU5XVXPE4QCGPK6L3E2PKER";
