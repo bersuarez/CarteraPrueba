@@ -20,7 +20,8 @@ import QRCodeScanner from 'react-native-qrcode-scanner';
 import * as Keychain from 'react-native-keychain';
 var activo = false;
 
-//tumem
+
+
 
 var publicKeyDestination = "GB6PACXR564X4PHW6B36SNW7OYXHPJJGPNPVBI5FJUOS227YOXB3NION";
 var privateKeyDestination = "SALWDYX53AQ7GEBLVY5554XOBR4DHABCJXU5XVXPE4QCGPK6L3E2PKER";
@@ -243,16 +244,7 @@ class ScanScreen extends React.Component {
   render() {
     return (
        <QRCodeScanner
-        initialRoute={{
-          component: QRCodeScanner,
-          title: 'Scan Code',
-          passProps: {
-            onRead: this.onSuccess.bind(this),
-            cameraStyle: styles.cameraContainer,
-            topViewStyle: styles.zeroContainer,
-            bottomViewStyle: styles.zeroContainer,
-          }
-        }}
+          onRead={this.onSuccess.bind(this)}
         style={{flex: 1}}
       />
     );
@@ -268,7 +260,7 @@ class Perfil extends React.Component {
         return (
                 <View style={{ flex: 1, alignItems: 'center', justifyContent:'center', backgroundColor: '#FDFEFE' }}>
                  <QRCode
-          value={'GDMZXWG46ZYPM7ROEFQPYOFTR253RPCHSB2KWXCV2YBYZ6I2KZ7GB6JX'}
+          value={'GB6PACXR564X4PHW6B36SNW7OYXHPJJGPNPVBI5FJUOS227YOXB3NION'}
           size={200}
           bgColor='black'
           fgColor='white'/>
