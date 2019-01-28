@@ -1,2 +1,2 @@
-# CarteraPrueba
-Wallet app created with React Native
+# Test Wallet
+Test for Wallet app created with React Native
